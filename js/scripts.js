@@ -1,6 +1,6 @@
 /* funcion para leer los datos desde randomuser*/
 async function getuser() {
-    const person = await fetch('../data.json')
+    const person = await fetch('https://randomuser.me/api/')
         .then(response => response.json())
         .then(data => data.results[0])
     checkDataPerson(person);
