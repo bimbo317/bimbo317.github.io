@@ -24,6 +24,8 @@ function checkDataPerson(per) {
             localStorage.clear();
             saveDataPerson(per);
         }
+    } else {
+        saveDataPerson(per);
     }
 }
 
