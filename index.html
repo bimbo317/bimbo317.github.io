@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- background css-->
+    <link rel="stylesheet" href="./css/background.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="wrap">
+        <div class="container">
+            <header class="header">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success" id="btnAbout" onclick="buttons('sectionAbout')"><i class="fa-solid fa-user fa-2xl"></i><br>About me</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success" id="btnResume" onclick="buttons('sectionResume')"><i class="fa-solid fa-file-lines fa-2xl"></i><br>Resume</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success" id="btnWorks" onclick="buttons('sectionWors')"><i class="fa-solid fa-eye fa-2xl"></i><br>Works</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success" id="btnContac" onclick="buttons('sectionContact')"><i class="fa-solid fa-id-card fa-2xl"></i><br>Contact</button>
+                    </li>
+                  </ul>
+            </header>
+            <div class="profile">
+                <div class="profile-content">
+                    <div class="photo">
+                        <img src="" alt="Picture not found" id="photo"></img>
+                    </div>
+                    <div class="title" id="name">First and Lastname</div>
+                    <div class="job"><marquee behavior="scroll" direction="left" scrollamount="5" id="job"></marquee></div>
+                    <div class="social">
+                        <a target="_blank" href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+                        <a target="_blank" href="https://github.com/"><span class="fab fa-github"></span></a>
+                        <a target="_blank" href="https://www.linkedin.com/"><span class="fab fa-linkedin"></span></a>
+                        <a target="_blank" href="https://stackoverflow.com/"><span class="fab fa-stack-overflow"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-warp">
+                <div class="element-section-wrap">
+                    <section class="sectionAbout" id="sectionAbout">
+                        <div class="element-row">
+                            <div class="title-about">
+                                <div class="title">About me</div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-d-6">
+                                    <p>
+                                        <strong id="nameAbout"></strong>
+                                        <span id="pAbout"></span>
+                                    </p>
+                                </div>
+                                <div class="col col-d-6">
+                                    <div class="info-list">
+                                        <ul>
+                                            <li>
+                                                <strong class="strongLi">Age: </strong><span id="spanAge">24</span>
+                                            </li>
+                                            <li>
+                                                <strong class="strongLi">Residence: </strong><span id="spanResidence">USA</span>
+                                            </li>
+                                            <li>
+                                                <strong class="strongLi">Frelance: </strong><span id="spanFreelance">Available</span>
+                                            </li>
+                                            <li>
+                                                <strong class="strongLi">Address: </strong><span id="spanAddress">California 1234</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-myservice">
+                            <div class="strong-title">My Services</div>
+                        </div>
+                        <div class="row row-services">
+                            <div class="col col-d-6">
+                                <div class="row-services">
+                                    <i class="fa-solid fa-laptop-code icon-services"></i><br>
+                                    <span class="spanServices"><strong>Web Designer</strong></span>
+                                    <p id="pWebDesigner"></p>
+                                </div>
+                            </div>
+                            <div class="col col-d-6">
+                                <div class="row-services">
+                                    <i class="fa-regular fa-file-code icon-services"></i><br>
+                                    <span class="spanServices"><strong>Developer</strong></span>
+                                    <p id="pDeveloper"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-services">
+                            <div class="col col-d-6">
+                                <div class="row-services">
+                                    <i class="fa-solid fa-rectangle-ad icon-services"></i><br>
+                                    <span class="spanServices"><strong>Advertising</strong></span>
+                                    <p id="pAdverstising"></p>
+                                </div>
+                            </div>
+                            <div class="col col-d-6">
+                                <div class="row-services">
+                                    <i class="fa-solid fa-gamepad icon-services"></i><br>
+                                    <span class="spanServices"><strong>Game Development</strong></span>
+                                    <p id="pGame"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sectionResume" id="sectionResume">
+                        <div class="element-row">
+                            <div class="element-row">
+                                <div class="title-about">
+                                    <div class="title">Resume</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-d-6">
+                                        <div class="title-column">
+                                            <i class="fa-solid fa-briefcase icon-services"></i>
+                                            <div class="strong-title">Experience</div>
+                                        </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col col-d-6">
+                                        <div class="title-column">
+                                            <i class="fa-solid fa-graduation-cap icon-services"></i>
+                                            <div class="strong-title">Education</div>
+                                        </div>
+                                        
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <!-- Button modal -->
+                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-d-6">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col col-d-6">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <!-- Button -->
+                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-d-6">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col col-d-6">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <!-- Button -->
+                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sectionWors" id="sectionWors">
+                        <div class="element-row">
+                            <div class="element-row">
+                                <div class="title-about">
+                                    <div class="title">Works</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-d-6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sectionContact" id="sectionContact">
+                        <div class="element-row">
+                            <div class="row">
+                                <div class="title">Contact me</div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-d-6">
+                                    <div class="col col-d-12 col-t-12 col-m-12 col-list-2 border-line-v">
+                                        <div class="info-list">
+                                            <ul>
+                                                <li>
+                                                    <strong> <span> Address: </span> </strong> <span id="spanAddress2"> California, USA </span>
+                                                </li>
+                                                <li>
+                                                    <strong> <span> Email: </span> </strong> <span id="spanEmail"> adlard@example.com </span>
+                                                </li>
+                                                <li>
+                                                    <strong> <span> Phone: </span> </strong> <span id="spanTel"> +123 654 78900 </span>
+                                                </li>
+                                                <li>
+                                                    <strong> <span> Freelance: </span> </strong> <span id="spanFreelance2"> Available </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form class="mb-3" method="" id="contactForm" name="contactForm" novalidate="novalidate">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                                    <div style="align-items: center;">
+                                        <button type="button" class="btn btn-mail" data-bs-toggle="modal" data-bs-target="#modalSendMail">Send Message</button>
+                                    </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Certificate-->
+    <div class="modal modal-lg" id="modalCert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Certificate</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="modalImage" src="./img/certificate.jpeg" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal send contact-->
+    <div class="modal modal-dialog" id="modalSendMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thanks</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>The mail has been sent</p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

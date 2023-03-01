@@ -1,0 +1,178 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: #ffffffc7;
+  margin: 14vh 6vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  max-width: 1268px;
+  max-height: 675px;
+}
+.header {
+  position: relative;
+  margin-top: 15vh;
+  float: left;
+  z-index: 100;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+}
+.btn {
+  width: 120px;
+  height: 80px;
+  color: #28a518;
+}
+.btn:hover {
+  background-color: #28a518;
+}
+.btn-mail{
+    margin-top: 10px;
+    width: 150px;
+    height: 36px;
+}
+.btn-mail:hover{
+    color: white;
+}
+
+.nav-item {
+  margin: 10px;
+}
+.profile {
+  display: flex;
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 390px;
+  height: 100%;
+  z-index: 11;
+  align-items: center;
+  justify-content: center;
+}
+.profile-content {
+  display: block;
+}
+.photo {
+  position: relative;
+  margin-left: 0;
+}
+#photo {
+  width: 200px;
+  border-radius: 50%;
+}
+.title {
+  margin-top: 20px;
+  font-size: 34px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.title::first-letter {
+  color: #28a518;
+  font-size: 38px;
+}
+
+form {
+    width: 70% !important;
+}
+
+input.btn-cert {
+    margin: 0;
+    padding: 1%;
+    justify-content: center;
+}
+
+.job {
+  font-size: 22px;
+}
+.social {
+  position: relative;
+  margin-top: 24px;
+}
+.fab {
+  color: #5d746a !important;
+  font-size: 26px;
+  margin: 10px;
+}
+.fab:hover{
+    color: #23ab3580 !important;
+}
+.card-warp {
+  height: 644px;
+  overflow-x: hidden;
+}
+ul {
+    list-style: none;
+}
+.row {
+    justify-content: center;
+}
+.row-services {
+  text-align: center;
+}
+.title-column {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+.icon-services {
+  font-size: 48px;
+  color: #28a518;
+}
+.strong-title {
+    margin-left: 2px;
+    font-size: 24px;
+}
+.strong-title::first-letter {
+    color: #28a518;
+    font-size: 32px;
+  }
+
+.modalImage {
+  width: 770px;
+}
+.card {
+  margin-bottom: 30px;
+}
+.card-body {
+  height: 216px;
+}
+.btn-cert {
+  margin-left: 70px;
+  height: 40px;
+}
+.btn-cert:hover {
+  color: white;
+}
+/* Codigo para cambiar el estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #23ab3580;
+}
+
+
+/*  primera letra de otro color
+ .content .title .first-word, .content .title:first-letter, .content-sidebar h2.widget-title .first-word, .content-sidebar h2.widget-title:first-letter {
+                color: #28a518!important;
+            }
+
+            */
