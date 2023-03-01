@@ -4,6 +4,7 @@ async function getuser() {
         .then(response => response.json())
         .then(data => data.results[0])
     checkDataPerson(person);
+    console.log(person);
     setPersonInHTML();
 }
 
