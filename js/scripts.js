@@ -44,8 +44,8 @@ function saveDataPerson(perso) {
 /* Funcion para completar el HTML con los datos alojados en el localdatastore */
 function setPersonInHTML() {
     let varName = "name";
-    //document.getElementById('name').innerHTML = localStorage.getItem(varName);
-    //document.getElementById('nameAbout').innerHTML = "Hello! I'm " + localStorage.getItem(varName) + ".";
+    document.getElementById('name').innerHTML = localStorage.getItem(varName);
+    document.getElementById('nameAbout').innerHTML = "Hello! I'm " + localStorage.getItem(varName) + ".";
     document.getElementById('photo').src = localStorage.getItem("picture");
     let prof = localStorage.getItem("profession");
     document.getElementById('job').innerHTML = prof;
