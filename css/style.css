@@ -176,3 +176,74 @@ ul {
             }
 
             */
+
+/* Celular */
+@media (max-width: 640px) {
+  .container{
+    margin: 1vh;
+    width: 98%;
+    max-height: 2500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .header{
+    margin-top: 3vh;
+  }
+  .nav-item{
+    margin: 10px;
+  }
+  .profile{
+    width: 98%;
+    height: auto;
+  }
+  ul.nav.flex-column{
+    flex-direction: row!important;
+  }
+  .btn {
+    width: 9vh;
+    height: 9vh;
+    color: #28a518;
+    font-size: 12px;
+    padding: 0px;
+  }
+  section#sectionContact.sectionContact{
+    display: flex;
+  }
+  form#contactForm.mb-3{
+    width: unset!important;
+  }
+  div#modalCert.modal.modal-lg-show {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 600px;
+  }
+  img.modalImage{
+    width: 325px;
+  }
+  .card-warp{
+    height: auto;
+    overflow-x: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.row{
+    display: unset;
+  }
+  .btn-cert {
+    height: 7vh;
+    width: 12vh;
+  }
+  div.btnSenMsg{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-mail{
+    width: 16vh;
+    height: 5vh;
+    font-size: 18px;
+  }
+}
