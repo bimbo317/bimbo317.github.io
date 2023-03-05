@@ -20,6 +20,7 @@
   max-width: 1268px;
   max-height: 675px;
 }
+/* Header */
 .header {
   position: relative;
   margin-top: 15vh;
@@ -52,8 +53,9 @@ p{
 .nav-item {
   margin: 10px;
 }
+/* Profile */
 .profile {
-  display: flex;
+  display: block;
   position: relative;
   text-align: center;
   float: left;
@@ -62,9 +64,7 @@ p{
   z-index: 11;
   align-items: center;
   justify-content: center;
-}
-.profile-content {
-  display: block;
+  margin: 14vh 1vh;
 }
 .photo {
   position: relative;
@@ -74,27 +74,6 @@ p{
   width: 200px;
   border-radius: 50%;
 }
-.title {
-  margin-top: 20px;
-  font-size: 34px;
-  position: relative;
-  margin-bottom: 20px;
-}
-.title::first-letter {
-  color: #28a518;
-  font-size: 38px;
-}
-
-form {
-    width: 70% !important;
-}
-
-input.btn-cert {
-    margin: 0;
-    padding: 1%;
-    justify-content: center;
-}
-
 .job {
   font-size: 22px;
 }
@@ -110,6 +89,26 @@ input.btn-cert {
 .fab:hover{
     color: #23ab3580 !important;
 }
+/* Sections */
+.title {
+  margin-top: 20px;
+  font-size: 34px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.title::first-letter {
+  color: #28a518;
+  font-size: 38px;
+}
+form {
+  width: 70% !important;
+}
+
+input.btn-cert {
+    margin: 0;
+    padding: 1%;
+    justify-content: center;
+}
 .card-warp {
   height: 644px;
   overflow-x: hidden;
@@ -120,6 +119,7 @@ ul {
 }
 .row {
     justify-content: center;
+    padding: 0 1vw 0 1vw;
 }
 .row-services {
   text-align: center;

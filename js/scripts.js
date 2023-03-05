@@ -63,10 +63,11 @@ function setPersonInHTML() {
 function hideSections() {
     document.getElementById("sectionAbout").style.display="none";
     document.getElementById("sectionResume").style.display="none";
-    document.getElementById("sectionWors").style.display="none";
+    document.getElementById("sectionWorks").style.display="none";
     document.getElementById("sectionContact").style.display="none";
 }
 
+/* Muestra la seccion que el usuario elige y oculta las otras*/
 function buttons(section) {
     hideSections();
     document.getElementById(section).style.display="block";
