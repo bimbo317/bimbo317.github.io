@@ -1,24 +1,26 @@
-/* funcion para leer los datos desde randomuser*/
+/* funcion para obtener datos desde randomuser*/
 async function getuser() {
     const person = await fetch('https://randomuser.me/api/?&noinfo')
     //const person = await fetch('../data.json')
         .then(response => response.json())
         .then(data => data.results[0])
-    checkDataPerson(person);
+    console.log("find new person in randomuser");
+    saveDataPerson(person);
+    //checkDataPerson(person);
     setPersonInHTML();
 }
 
-getuser();
+checkDataPerson();
 /* De forma predeterminada se carga la seccion About*/
 buttons("sectionAbout");
 
-/* Chequea si los datos de una persona existen en el localstorage, si existe no hace nada, pero si no existe en el localstorage carga los datos
-obtenidos de la persona llamando a la funcion saveDataPerson*/
-function checkDataPerson(per) {
+/* Chequea si los datos de una persona existen en el localstorage, si existe carga los datos en el html, pero si no existe en el localstorage
+llama a la funcion getuser para obtener los datos de una nueva persona guarda los datos y los carga en el html*/
+function checkDataPerson() {
     if (localStorage.getItem("name")) {
-        console.log("Person is load");
+        setPersonInHTML();
     } else {
-        saveDataPerson(per);
+        getuser();
     }
 }
 
@@ -33,7 +35,6 @@ function saveDataPerson(perso) {
     localStorage.setItem("email", perso.email);
     localStorage.setItem("phone", perso.phone);
     localStorage.setItem("freelance", "Available");
-    console.log("se guardan datos en localStorage")
 }
 
 /* Funcion para completar el HTML con los datos alojados en el localdatastore */
