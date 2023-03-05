@@ -23,16 +23,16 @@
             <header class="header">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success" id="btnAbout" onclick="buttons('sectionAbout')"><i class="fa-solid fa-user fa-2xl"></i><br>About me</button>
+                        <button type="button" class="btn btn-outline-success" id="btnAbout" onclick="buttons('sectionAbout')"><i class="fa-solid fa-user fa-2xl"></i><p class="pButton">About me</p></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success" id="btnResume" onclick="buttons('sectionResume')"><i class="fa-solid fa-file-lines fa-2xl"></i><br>Resume</button>
+                        <button type="button" class="btn btn-outline-success" id="btnResume" onclick="buttons('sectionResume')"><i class="fa-solid fa-file-lines fa-2xl"></i><p class="pButton">Resume</p></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success" id="btnWorks" onclick="buttons('sectionWors')"><i class="fa-solid fa-eye fa-2xl"></i><br>Works</button>
+                        <button type="button" class="btn btn-outline-success" id="btnWorks" onclick="buttons('sectionWors')"><i class="fa-solid fa-eye fa-2xl"></i><p class="pButton">Works</p></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success" id="btnContac" onclick="buttons('sectionContact')"><i class="fa-solid fa-id-card fa-2xl"></i><br>Contact</button>
+                        <button type="button" class="btn btn-outline-success" id="btnContac" onclick="buttons('sectionContact')"><i class="fa-solid fa-id-card fa-2xl"></i><p class="pButton">Contact</p></button>
                     </li>
                   </ul>
             </header>
@@ -54,7 +54,7 @@
             <div class="card-warp">
                 <div class="element-section-wrap">
                     <section class="sectionAbout" id="sectionAbout">
-                        <div class="element-row">
+                        <div class="row">
                             <div class="title-about">
                                 <div class="title"><h1>About me</h1></div>
                             </div>
@@ -122,86 +122,69 @@
                         </div>
                     </section>
                     <section class="sectionResume" id="sectionResume">
-                        <div class="element-row">
-                            <div class="element-row">
-                                <div class="title-about">
-                                    <div class="title"><h1>Resume</h1></div>
+                        <div class="title-about">
+                            <div class="title"><h1>Resume</h1></div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-d-6">
+                                <div class="title-column">
+                                    <i class="fa-solid fa-briefcase icon-services"></i>
+                                    <div class="strong-title">Experience</div>
                                 </div>
-                                <div class="row">
-                                    <div class="col col-d-6">
-                                        <div class="title-column">
-                                            <i class="fa-solid fa-briefcase icon-services"></i>
-                                            <div class="strong-title">Experience</div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                          </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
-                                    <div class="col col-d-6">
-                                        <div class="title-column">
-                                            <i class="fa-solid fa-graduation-cap icon-services"></i>
-                                            <div class="strong-title">Education</div>
-                                        </div>
-                                        
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <!-- Button modal -->
-                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
-                                            </div>
-                                          </div>
+                                  </div>
+                                  <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
+                                  </div>
+                                  <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col col-d-6">
+                                <div class="title-column">
+                                    <i class="fa-solid fa-graduation-cap icon-services"></i>
+                                    <div class="strong-title">Education</div>
                                 </div>
-                                <div class="row">
-                                    <div class="col col-d-6">
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                          </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <!-- Button -->
+                                        <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
                                     </div>
-                                    <div class="col col-d-6">
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <!-- Button -->
-                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
-                                            </div>
-                                          </div>
+                                  </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <!-- Button modal -->
+                                        <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-d-6">
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                          </div>
+                                  </div>
+                                  <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <!-- Button -->
+                                        <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
                                     </div>
-                                    <div class="col col-d-6">
-                                        <div class="card" style="width: 18rem;">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <!-- Button -->
-                                                <button type="button" class="btn btn-cert" data-bs-toggle="modal" data-bs-target="#modalCert">Certificate</button>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                     </section>

@@ -45,7 +45,10 @@
 .btn-mail:hover{
     color: white;
 }
-
+p{
+  margin-top: 1vh;
+  margin-bottom: 0;
+}
 .nav-item {
   margin: 10px;
 }
@@ -110,6 +113,7 @@ input.btn-cert {
 .card-warp {
   height: 644px;
   overflow-x: hidden;
+  margin-top: 16px;
 }
 ul {
     list-style: none;
@@ -142,7 +146,14 @@ ul {
 .modalImage {
   width: 770px;
 }
+.col{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .card {
+  width: 34vh!important;
   margin-bottom: 30px;
 }
 .card-body {
@@ -182,31 +193,68 @@ ul {
   .container{
     margin: 1vh;
     width: 98%;
-    max-height: 2500px;
+    max-height: 6000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
   }
+  .title::first-letter {
+    color: #28a518;
+    font-size: 8vh;
+  }
+  .btn{
+    border: none;
+  }
+  p.pButton{
+    display: none;
+  }
   .header{
     margin-top: 3vh;
   }
   .nav-item{
-    margin: 10px;
+    margin: 0.5vh;
   }
   .profile{
     width: 98%;
     height: auto;
   }
+  #name{
+    font-size: 6.6vh;
+  }
+  h1, .strong-title{
+    font-size: 5vh;
+  }
+  .strong-title::first-letter {
+    color: #28a518;
+    font-size: 8vh;
+  }
+  .icon-services {
+    font-size: 14vh;
+    color: #28a518;
+  }
+  .row{
+    font-size: 4.5vh;
+  }
+  marquee{
+    font-size: 5.2vh;
+  }
+  .fab{
+    font-size: 6vh;
+  }
   ul.nav.flex-column{
     flex-direction: row!important;
   }
   .btn {
-    width: 9vh;
-    height: 9vh;
+    width: 18vw;
+    height: 10vh;
     color: #28a518;
-    font-size: 12px;
+    font-size: 25px;
     padding: 0px;
+  }
+  #sectionAbout {
+    width: 90vw;
+    padding: 10px;
   }
   section#sectionContact.sectionContact{
     display: flex;
@@ -230,20 +278,43 @@ ul {
     flex-direction: column;
     align-items: center;
   }
+  .card{
+    width: 90vw!important;
+  }
+  .card-body{
+    height: auto;
+    font-size: 4vh;
+    padding: 5px;
+  }
+  .card-title{
+    font-size: 5vh;
+  }
+  .card-subtitle{
+    font-size: 4.5vh;
+  }
   div.row{
     display: unset;
   }
   .btn-cert {
     height: 7vh;
-    width: 12vh;
+    width: 22vh;
+  }
+  #sectionContact > div > div{
+    width: fit-content;
+  }
+  #sectionContact > div > div:nth-child(2) > div > div > div {
+    font-size: 3.2vh;
+  }
+  #spanEmail{
+    font-size: 2.5vh;
   }
   div.btnSenMsg{
     display: flex;
     flex-direction: column;
   }
   .btn-mail{
-    width: 16vh;
-    height: 5vh;
-    font-size: 18px;
+    width: 26vh;
+    height: 15vh;
+    font-size: 4vh;
   }
 }

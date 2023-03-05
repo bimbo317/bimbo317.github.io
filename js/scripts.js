@@ -1,7 +1,7 @@
 /* funcion para leer los datos desde randomuser*/
 async function getuser() {
-    //const person = await fetch('https://randomuser.me/api/?&noinfo')
-    const person = await fetch('../data.json')
+    const person = await fetch('https://randomuser.me/api/?&noinfo')
+    //const person = await fetch('../data.json')
         .then(response => response.json())
         .then(data => data.results[0])
     checkDataPerson(person);
@@ -12,18 +12,11 @@ getuser();
 /* De forma predeterminada se carga la seccion About*/
 buttons("sectionAbout");
 
-/* Chequea si los datos de la persona existen en el localstorage, si existe compara los nombres, si no son iguales, reemplaza el contenido del localstorage por los datos
-obtenidos de la persona*/
+/* Chequea si los datos de una persona existen en el localstorage, si existe no hace nada, pero si no existe en el localstorage carga los datos
+obtenidos de la persona llamando a la funcion saveDataPerson*/
 function checkDataPerson(per) {
     if (localStorage.getItem("name")) {
-        let nameInLocal = localStorage.getItem("name");
-        let nameRec = per.name.first + " " + per.name.last;
-        if (nameInLocal == nameRec) {
-            console.log("it's the same"+nameInLocal+", "+nameRec);
-        } else {
-            localStorage.clear();
-            saveDataPerson(per);
-        }
+        console.log("Person is load");
     } else {
         saveDataPerson(per);
     }
